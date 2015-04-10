@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 4, 2014 2:33:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.POJO.QueryInfo" table="QueryInfo" catalog="queryTopicClassifer">
+        <id name="queryId" type="java.lang.Integer">
+            <column name="queryID" />
+            <generator class="identity" />
+        </id>
+        <property name="queryContent" type="string">
+            <column name="queryContent" length="65535" not-null="true" />
+        </property>
+        <property name="queryExpension" type="string">
+            <column name="queryExpension" />
+        </property>
+        <property name="subtopicId" type="int">
+            <column name="subtopicID" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

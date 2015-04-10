@@ -1,0 +1,11 @@
+com.DAOs
+com.POJO
+com.index.Inject
+com.index.Read
+com.preprocess.query
+com.preprocess.subtopic
+com.retrieval.algorithms
+com.retrieval.executor
+com.utils.constant
+com.utils.google
+com.utils.nlp

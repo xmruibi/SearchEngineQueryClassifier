@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 4, 2014 2:33:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.POJO.SubtopicInfo" table="SubtopicInfo" catalog="queryTopicClassifer">
+        <id name="subtopicId" type="java.lang.Integer">
+            <column name="subtopicID" />
+            <generator class="identity" />
+        </id>
+        <property name="subtopicStmt" type="string">
+            <column name="subtopicStmt" length="16777215" not-null="true" />
+        </property>
+        <property name="keywords" type="string">
+            <column name="keywords" length="10000" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="taskId" type="int">
+            <column name="taskID" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

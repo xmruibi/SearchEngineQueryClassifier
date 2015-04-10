@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory >
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/queryTopicClassifer</property>
+  <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+
+  <property name="hibernate.query.factory_class">org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+
+  <mapping resource="com/POJO/ActionInfo.hbm.xml"/>
+  <mapping resource="com/POJO/QueryInfo.hbm.xml"/>
+  <mapping resource="com/POJO/SubtopicInfo.hbm.xml"/>
+  <mapping resource="com/POJO/TaskInfo.hbm.xml"/>
+  <mapping resource="com/POJO/UserInfo.hbm.xml"/>
+  <mapping resource="com/POJO/UserTopicInfo.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 4, 2014 2:33:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.POJO.ActionInfo" table="ActionInfo" catalog="queryTopicClassifer">
+        <id name="actionId" type="java.lang.Integer">
+            <column name="actionID" />
+            <generator class="identity" />
+        </id>
+        <property name="logid" type="string">
+            <column name="logid" length="10" not-null="true" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="10" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="50" not-null="true" />
+        </property>
+        <property name="refer" type="string">
+            <column name="refer" length="65535" not-null="true" />
+        </property>
+        <property name="groupid" type="int">
+            <column name="groupid" not-null="true" />
+        </property>
+        <property name="taskid" type="int">
+            <column name="taskid" not-null="true" />
+        </property>
+        <property name="time" type="string">
+            <column name="time" length="50" not-null="true" />
+        </property>
+        <property name="query" type="string">
+            <column name="query" length="500" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="1000" not-null="true" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="1000" not-null="true" />
+        </property>
+        <property name="abstract_" type="string">
+            <column name="abstract" length="65535" not-null="true" />
+        </property>
+        <property name="content" type="string">
+            <column name="content" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
