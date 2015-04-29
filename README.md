@@ -29,7 +29,7 @@ Emergence, spread, social networking sites, Facebook+, Myspace+, Twitter+, Delic
 Keywords for Task 5:
  friend, four-day vacation, December+, Helsinki+, Finland+, information, vacation, flights, US+, hotels, activities, goal, joint plan, things, Euros, person, group, vacation, outdoor activity, dining activity, cultural activity, types, addition
 
-####1.1.2.	Language model build up
+####1.1.2.	Corpus Set Up
 According to the keywords extracted from task or subtopic statement, these keywords can be combined as query for each subtopic. Here are the combination rules: 
 
  - 1)	Keywords from task statement should regarded as a collection. 
@@ -37,10 +37,10 @@ According to the keywords extracted from task or subtopic statement, these keywo
  - 3)	Keywords from each subtopic statement should regarded as a collection.
  - 4)	Those keywords come from three collections combined as a query represent for each subtopic.
 
-Using these query and search the TOP 20 results on Google, the titles and snippets on the Google result pages can regarded as subtopic language model.
+Using these query and search the TOP 20 results on Google, the titles and snippets on the Google result pages can regarded as the corpus for describing each subtopic .
 
 ####1.1.3.	Dirichlet Prior Smoothing
-Once the language model built up, I use Dirichlet Prior Smoothing (DPS) method to get the probability of each term from a query in a certain subtopic language model. Then get product by these probability. The probability can be regarded as score one.
+Once the corpus built up, We nned build language model for getting the likehood of each query belong to what kind of subtopic. I use Dirichlet Prior Smoothing (DPS) method to get the probability of each term from a query in a certain subtopic language model. Then get product by these probability. The probability can be regarded as score one.
 
 ####1.1.4.	Collection Expansion
 However, sometimes the term may not get any frequency in collection which is shown as c(w,D) in equation due to the collection may not rich enough for some terms. To deal with this problem, I tried to use the title of task as query to search on Google and get its TOP 50 result as the collection background.
