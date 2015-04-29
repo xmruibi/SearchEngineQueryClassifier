@@ -31,10 +31,11 @@ Keywords for Task 5:
 
 ####1.1.2.	Language model build up
 According to the keywords extracted from task or subtopic statement, these keywords can be combined as query for each subtopic. Here are the combination rules: 
-1)	Keywords from task statement should regarded as a collection. 
-2)	Proper Noun words should regarded as a collection.
-3)	Keywords from each subtopic statement should regarded as a collection.
-4)	Those keywords come from three collections combined as a query represent for each subtopic.
+
+ - 1)	Keywords from task statement should regarded as a collection. 
+ - 2)	Proper Noun words should regarded as a collection.
+ - 3)	Keywords from each subtopic statement should regarded as a collection.
+ - 4)	Those keywords come from three collections combined as a query represent for each subtopic.
 
 Using these query and search the TOP 20 results on Google, the titles and snippets on the Google result pages can regarded as subtopic language model.
 
