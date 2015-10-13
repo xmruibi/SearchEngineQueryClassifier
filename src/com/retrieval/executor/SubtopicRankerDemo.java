@@ -54,10 +54,17 @@ public class SubtopicRankerDemo {
 				sInfoMap.put(sinfo.getSubtopicId(), sinfo.getSubtopicStmt());
 			}
 			long endtime = System.currentTimeMillis();
-			for (Entry<Integer, Double> entry : ScoreRank.getRank(scoreMap1,
-					scoreMap2).entrySet()) {
-				System.out.println(sInfoMap.get(entry.getKey()) + "    "
-						+ entry.getValue());
+			TreeMap<Integer,Double> scoresMap = ScoreRank.getRank(scoreMap1,
+					scoreMap2);
+			Entry<Integer, Double> first  = scoresMap.pollFirstEntry();
+			System.out.println("Related Topic One: " +sInfoMap.get(first.getKey()) + " " + first.getValue());
+			
+//			Entry<Integer, Double> second  = scoresMap.pollFirstEntry();
+//			System.out.println("Related Topic Two: " +sInfoMap.get(second.getKey()) + "    "
+//					+ second.getValue());
+			
+			for (Entry<Integer, Double> entry  : scoresMap.entrySet()) {
+				System.out.println(sInfoMap.get(entry.getKey()) + "  Score: " + entry.getValue());
 			}
 			System.out.println("Searching time: "+String.valueOf(endtime-starttime)+"ms");
 		}

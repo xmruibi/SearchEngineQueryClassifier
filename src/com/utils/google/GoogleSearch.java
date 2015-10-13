@@ -78,7 +78,7 @@ public class GoogleSearch {
 				}
 			}
 
-			System.out.println(query + " searching done!");
+			//System.out.println(query + " searching done!");
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

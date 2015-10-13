@@ -36,7 +36,7 @@ public class QueryExpIndexWritter extends IndexWritter{
 		document.add(SubtopicNull);
 		this.indexWriter.addDocument(document);
 		this.indexWriter.commit();
-		System.out.println("Query Expension Index set up successfully!");
+		System.out.println("....Query Expension indexing......");
 	}
 
 }

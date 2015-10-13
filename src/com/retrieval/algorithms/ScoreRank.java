@@ -28,13 +28,13 @@ public class ScoreRank implements Comparator<Integer>  {
         }
 	}
 
-	public static Map<Integer, Double> getRank(Map<Integer, Double> scoreMap1,Map<Integer, Double> scoreMap2) {
+	public static TreeMap<Integer, Double> getRank(Map<Integer, Double> scoreMap1,Map<Integer, Double> scoreMap2) {
 		// TODO Auto-generated method stub  
 		for (Entry<Integer, Double> entry : scoreMap1.entrySet()) {  
 		  scoreMap1.replace(entry.getKey(), entry.getValue()+scoreMap2.get(entry.getKey()));	  
 		}  
 		ScoreRank sort = new ScoreRank(scoreMap1);
-		Map<Integer,Double> sorted = new TreeMap<Integer,Double>(sort);	
+		TreeMap<Integer,Double> sorted = new TreeMap<Integer,Double>(sort);	
 		sorted.putAll(scoreMap1);
 		return sorted;
 	}
