@@ -29,12 +29,12 @@ For social media study, we assumed five subtopics for team member:
  - Commerce around these sites-(How do they make money? How do users use them to make money?)
  - Examples of usage of such services in various domains, such as healthcare and politics
 
-![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/SocialMedia1.png)
-![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/SocialMedia2.png) 
+![alt tag](https://github.com/xmruibi/SearchEngineQueryClassifier/blob/master/Socialmedia1.png)
+![alt tag](https://github.com/xmruibi/SearchEngineQueryClassifier/blob/master/Socialmedia2.png) 
 
 How about them by scores and rank?
 
-![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/SocialMedia3.png)
+![alt tag](https://github.com/xmruibi/SearchEngineQueryClassifier/blob/master/Socialmedia3.png)
 
 ## Systems Primary Techs:
 In experiment stage, my work is to find out a better pattern to match the user query and subtopic and give their matching probability from the above-mentioned potential features. 
