@@ -13,6 +13,29 @@ It is also mentionable that the system applied the chatting function, which is a
 Based on the existing system, the purpose of my study can be separated into two parts. The first one is trying to understand every chat information and find out their potential annotation. Then using these manual annotations, we can identify the subtopics under the given task belong to a certain user in a group.  The second purpose is to match the user query into with its most possible subtopic by giving the probabilities between query and each subtopics. Basically to say, that is a some kind of query classifier that when giving a query then it return the most possible category or topic of this query. Like, giving Apple, then it will identify user is asking about the company instead of the fruit. But this query classifier is a subproject for collaborative search engine, which is a search engine platform for a team not an individual (As you know, most of current search engine are just personalized for individual). When a team is doing a search task, like planning to go for a travel, so one guy focus on searching hotel or airline ticket, one guy focus on studying the route of attractions. So my classifier is trying to find out what does each person focus on. Then the collaborative search engine should give each person different ranking results. 
 
 
+## What does classifier result look like?
+We've set two experimental tasks for team searching. One is (Study on Social Media). Another is travel in Helsinki. I did some example queries on Console and screenshot results. 
+
+For traveling task, we assumed we have three people searching on three aspects in Helsinki: culture, dining and outdoor activity.
+
+![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/TravelTask.png)
+
+
+For social media study, we assumed five subtopics for team member:
+
+ - Emergence and spread of social networking sites, such as MySpace, Facebook, Twitter, and del.icio.us
+ - Statistics about popularity of such sites-(How many users? How much time they spend? How much content?)
+ - Impacts on students and professionals
+ - Commerce around these sites-(How do they make money? How do users use them to make money?)
+ - Examples of usage of such services in various domains, such as healthcare and politics
+
+![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/SocialMedia1.png)
+![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/SocialMedia2.png) 
+
+How about them by scores and rank?
+
+![alt tag](https://github.com/xmruibi/infsci-2950-query-subtopic-probability/blob/master/SocialMedia3.png)
+
 ## Systems Primary Techs:
 In experiment stage, my work is to find out a better pattern to match the user query and subtopic and give their matching probability from the above-mentioned potential features. 
 ###1.1.	Subtopic Language Model
